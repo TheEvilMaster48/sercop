@@ -117,7 +117,7 @@ export function DireccionForm() {
                 value={formData.canton}
                 onChange={handleChange}
                 placeholder="Ej: Quito"
-                maxLength="50"
+                maxLength={50}
                 required
               />
             </div>
@@ -131,7 +131,7 @@ export function DireccionForm() {
                 value={formData.parroquia}
                 onChange={handleChange}
                 placeholder="Ej: Centro Histórico"
-                maxLength="50"
+                maxLength={50}
                 required
               />
             </div>
@@ -148,7 +148,7 @@ export function DireccionForm() {
                 value={formData.calle_principal}
                 onChange={handleChange}
                 placeholder="Ej: Avenida 10 de Agosto"
-                maxLength="50"
+                maxLength={50}
                 required
               />
             </div>
@@ -162,7 +162,7 @@ export function DireccionForm() {
                 value={formData.interseccion}
                 onChange={handleChange}
                 placeholder="Ej: Calle Mejía"
-                maxLength="50"
+                maxLength={50}
                 required
               />
             </div>
@@ -179,7 +179,7 @@ export function DireccionForm() {
                 value={formData.numero}
                 onChange={handleChange}
                 placeholder="Ej: 456"
-                maxLength="10"
+                maxLength={10}
                 required
               />
             </div>
@@ -193,7 +193,7 @@ export function DireccionForm() {
                 value={formData.referencia}
                 onChange={handleChange}
                 placeholder="Ej: Frente a parque central"
-                maxLength="50"
+                maxLength={50}
               />
             </div>
             <div>
@@ -206,7 +206,7 @@ export function DireccionForm() {
                 value={formData.codigo_postal}
                 onChange={handleChange}
                 placeholder="Ej: 170150"
-                maxLength="10"
+                maxLength={10}
               />
             </div>
           </div>
@@ -229,7 +229,7 @@ export function DireccionForm() {
                 value={formData.autoridad_nombre}
                 onChange={handleChange}
                 placeholder="Ej: Juan García Pérez"
-                maxLength="100"
+                maxLength={100}
                 required
               />
             </div>
@@ -243,7 +243,7 @@ export function DireccionForm() {
                 value={formData.autoridad_cargo}
                 onChange={handleChange}
                 placeholder="Ej: Ministro"
-                maxLength="100"
+                maxLength={100}
                 required
               />
             </div>
@@ -259,7 +259,7 @@ export function DireccionForm() {
               value={formData.autoridad_cedula}
               onChange={handleChange}
               placeholder="Ej: 1718502145"
-              maxLength="10"
+              maxLength={10}
               required
             />
           </div>
@@ -282,7 +282,7 @@ export function DireccionForm() {
                 value={formData.representante_nombre}
                 onChange={handleChange}
                 placeholder="Ej: María Rodríguez López"
-                maxLength="100"
+                maxLength={100}
                 required
               />
             </div>
@@ -296,7 +296,7 @@ export function DireccionForm() {
                 value={formData.representante_cedula}
                 onChange={handleChange}
                 placeholder="Ej: 1725634891"
-                maxLength="10"
+                maxLength={10}
                 required
               />
             </div>
@@ -307,7 +307,7 @@ export function DireccionForm() {
           <Button
             type="submit"
             disabled={loading}
-            className="flex-1 bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white font-bold py-3 rounded transition-all disabled:opacity-60"
+            className="flex-1 bg-linear-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white font-bold py-3 rounded transition-all disabled:opacity-60"
           >
             {loading ? '⏳ Guardando...' : '💾 Guardar Dirección y Autoridad'}
           </Button>
